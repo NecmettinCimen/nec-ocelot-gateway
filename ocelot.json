@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reacttodomanager.necmettin.me",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/reacttodomanager"
+    },
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "necmettin.me",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}
