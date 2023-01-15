@@ -1,0 +1,15 @@
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.Gateway.exe
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\appsettings.json
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\ocelot.json
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.Gateway.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.Gateway.deps.json
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.Gateway.runtimeconfig.json
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.Gateway.pdb
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\FluentValidation.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Newtonsoft.Json.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Newtonsoft.Json.Bson.dll
+C:\Users\necme\OneDrive\Masaüstü\Github\nec-ocelot-gateway\bin\Release\net7.0\publish\Ocelot.dll

@@ -24,6 +24,18 @@ namespace Ocelot.Gateway
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+   {
+       options.AddPolicy("AllowAll",
+           builder =>
+           {
+               builder
+               .AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+           });
+   });
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -34,6 +46,7 @@ namespace Ocelot.Gateway
 
         public async void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors("AllowAll");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Nec.Ocelot.Gateway\\Ocelot.Gateway.csproj",
+      "projectUniqueName": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Github\\nec-ocelot-gateway\\Ocelot.Gateway.csproj",
       "projectName": "Ocelot.Gateway",
-      "projectPath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Nec.Ocelot.Gateway\\Ocelot.Gateway.csproj",
+      "projectPath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Github\\nec-ocelot-gateway\\Ocelot.Gateway.csproj",
       "packagesPath": "C:\\Users\\necme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Nec.Ocelot.Gateway\\obj\\",
+      "outputPath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Github\\nec-ocelot-gateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\necme\\AppData\\Roaming\\NuGet\\NuGet.Config"

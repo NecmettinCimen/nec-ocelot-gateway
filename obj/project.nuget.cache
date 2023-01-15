@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8RCNbIOUZKHnWAlW8KIIsCjWAjeznihejjXbNyvb4FqgCukQX+jAICRyu7d3wt6AF8V+Fut+p63rEWIv5GkRtA==",
+  "dgSpecHash": "urXroLCY529WYlzf5DSO/4J1oLdMG5sRAF1OP3DDPQN06w6fyyNW+aFjBVO1sXitxpiwqFQ8kWQoe2qsmSQeXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Nec.Ocelot.Gateway\\Ocelot.Gateway.csproj",
+  "projectFilePath": "C:\\Users\\necme\\OneDrive\\Masaüstü\\Github\\nec-ocelot-gateway\\Ocelot.Gateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\necme\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\necme\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
