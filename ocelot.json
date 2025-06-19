@@ -1,139 +1,74 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/",
+      "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "aracyonetim.necmettin.me",
+          "Host": "cms-api.necmettincimen.xyz",
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/aracyonetim"
+      "UpstreamPathTemplate": "/cms-api/{everything}",
+      "SwaggerKey": "cms-api",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
     },
     {
-      "DownstreamPathTemplate": "/",
+      "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "blog.necmettin.me",
+          "Host": "blog-api-golang.necmettincimen.xyz",
           "Port": 443
         }
       ],
-      "UpstreamPathTemplate": "/blog"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "cms-admin.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/cms-admin"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "cms-api.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/cms-api"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "kodluyoruzhackathon.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/kodluyoruzhackathon"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "marvelapi.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/marvelapi"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "marvelapp.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/marvelapp"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "picsum.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/picsum"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "reacttodomanager.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/reacttodomanager"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "swagger-service-generator-reactjs.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/swagger-service-generator-reactjs"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "task.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/task"
-    },
-    {
-      "DownstreamPathTemplate": "/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "portfolio.necmettin.me",
-          "Port": 443
-        }
-      ],
-      "UpstreamPathTemplate": "/"
+      "UpstreamPathTemplate": "/blog-api-golang/{everything}",
+      "SwaggerKey": "blog-api-golang",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://necmettin.me"
-  }
+    "BaseUrl": "http://localhost:5143",
+    "RateLimitOptions": {
+      "ClientIdHeader": "ClientId",
+      "DisableRateLimitHeaders": false,
+      "HttpStatusCode": 429,
+      "QuotaExceededMessage": "Rate limit exceeded. Please try again later.",
+      "RateLimitCounterPrefix": "ocelot"
+    }
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "cms-api",
+      "Config": [
+        {
+          "Name": "cms-api",
+          "Version": "v1",
+          "Url": "https://cms-api.necmettincimen.xyz/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "blog-api-golang",
+      "Config": [
+        {
+          "Name": "blog-api-golang",
+          "Version": "v1",
+          "Url": "https://blog-api-golang.necmettincimen.xyz/swagger/doc.json"
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,35 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# Publish results
+out/
+
+# Docker
+*.tar
+*.log
+docker-compose.*.yml
+.docker/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+*.swp
+*.bak
+*.tmp
+
+# Ignore Dockerfile if needed
+# Dockerfile 
