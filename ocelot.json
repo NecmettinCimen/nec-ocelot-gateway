@@ -10,7 +10,7 @@
         }
       ],
       "UpstreamPathTemplate": "/cms-api/{everything}",
-      "SwaggerKey": "cms-api",
+      "SwaggerKey": "cms-api-net-core",
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
@@ -37,6 +37,44 @@
         "PeriodTimespan": 60,
         "Limit": 10
       }
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "marvel-api.necmettincimen.xyz",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/marvel-api-net-core/{everything}",
+      "SwaggerKey": "marvel-api-net-core",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "marvel-java-app.necmettincimen.xyz",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/marvel-java-app/{everything}",
+      "SwaggerKey": "marvel-java-app",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 10
+      }
     }
   ],
   "GlobalConfiguration": {
@@ -51,7 +89,7 @@
   },
   "SwaggerEndPoints": [
     {
-      "Key": "cms-api",
+      "Key": "cms-api-net-core",
       "Config": [
         {
           "Name": "cms-api",
@@ -67,6 +105,26 @@
           "Name": "blog-api-golang",
           "Version": "v1",
           "Url": "https://blog-api-golang.necmettincimen.xyz/swagger/doc.json"
+        }
+      ]
+    },
+    {
+      "Key": "marvel-api-net-core",
+      "Config": [
+        {
+          "Name": "marvel-api-net-core",
+          "Version": "v1",
+          "Url": "https://marvel-api.necmettincimen.xyz/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "marvel-java-app",
+      "Config": [
+        {
+          "Name": "marvel-java-app",
+          "Version": "v1",
+          "Url": "https://marvel-java-app.necmettincimen.xyz/v3/api-docs"
         }
       ]
     }
